@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Services from "./pages/Services";
 import OurWork from "./pages/OurWork";
+import ContactForm from "./pages/contant";
 
 
 export default function App() {
@@ -23,6 +24,7 @@ export default function App() {
       <Home />
       <Services />
       <OurWork />
+      <ContactForm />
     </>
   );
 }
