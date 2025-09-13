@@ -36,15 +36,32 @@ export default function ContactForm() {
   };
 
   return (
-    <section id="contact" className="min-h-screen flex items-center justify-center bg-gray-50 dark:bg-gray-900 p-6">
-      <div className="w-full max-w-lg bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-8">
-        <h2 className="text-3xl font-bold text-center text-gray-800 dark:text-white mb-6">
-          Get in Touch
-        </h2>
+    <section
+      id="contact"
+      className="relative text-center px-6 py-16 bg-gradient-to-b 
+                 from-white to-blue-50 dark:from-gray-900 dark:to-gray-800 overflow-hidden"
+    >
 
+      {/* Heading */}
+      <h2 className="text-3xl sm:text-5xl font-extrabold text-gray-900 dark:text-white leading-tight relative z-10">
+        Let’s <span className="text-indigo-500">connect</span> with you
+      </h2>
+
+      {/* Subheading */}
+      <p className="mt-4 text-gray-600 dark:text-gray-300 max-w-xl mx-auto relative z-10 text-base sm:text-lg">
+        Have a question, project idea, or just want to say hi? Fill out the form
+        below and we’ll get back to you soon.
+      </p>
+
+      {/* Form Card */}
+      <div className="mt-10 w-full max-w-lg mx-auto bg-white/80 dark:bg-gray-800/80 
+                      backdrop-blur-lg rounded-2xl shadow-xl p-8 relative z-10 
+                      border border-gray-200 dark:border-gray-700">
         <form onSubmit={handleSubmit} className="space-y-5">
-          <div>
-            <label className="block text-gray-700 dark:text-gray-300 mb-1">Name</label>
+          <div className="text-left">
+            <label className="block text-gray-700 dark:text-gray-300 mb-1">
+              Name
+            </label>
             <input
               type="text"
               name="name"
@@ -52,13 +69,15 @@ export default function ContactForm() {
               onChange={handleChange}
               required
               className="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 
-              focus:ring-2 focus:ring-indigo-500 dark:bg-gray-700 dark:text-white outline-none"
+                         focus:ring-2 focus:ring-indigo-500 dark:bg-gray-700 dark:text-white outline-none"
               placeholder="Enter your name"
             />
           </div>
 
-          <div>
-            <label className="block text-gray-700 dark:text-gray-300 mb-1">Email</label>
+          <div className="text-left">
+            <label className="block text-gray-700 dark:text-gray-300 mb-1">
+              Email
+            </label>
             <input
               type="email"
               name="email"
@@ -66,13 +85,15 @@ export default function ContactForm() {
               onChange={handleChange}
               required
               className="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 
-              focus:ring-2 focus:ring-indigo-500 dark:bg-gray-700 dark:text-white outline-none"
+                         focus:ring-2 focus:ring-indigo-500 dark:bg-gray-700 dark:text-white outline-none"
               placeholder="Enter your email"
             />
           </div>
 
-          <div>
-            <label className="block text-gray-700 dark:text-gray-300 mb-1">Message / Query</label>
+          <div className="text-left">
+            <label className="block text-gray-700 dark:text-gray-300 mb-1">
+              Message / Query
+            </label>
             <textarea
               name="query"
               value={formData.query}
@@ -80,14 +101,15 @@ export default function ContactForm() {
               required
               rows="4"
               className="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 
-              focus:ring-2 focus:ring-indigo-500 dark:bg-gray-700 dark:text-white outline-none"
+                         focus:ring-2 focus:ring-indigo-500 dark:bg-gray-700 dark:text-white outline-none"
               placeholder="Write your message here..."
             ></textarea>
           </div>
 
           <button
             type="submit"
-            className="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors"
+            className="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 px-4 
+                       rounded-lg transition-colors shadow-md"
           >
             Send Message
           </button>
