@@ -1,7 +1,11 @@
-import React from "react";
 import ServicesCard from "../components/ServicesCard";
 import Heading from "../components/Heading";
-import assets from "../assets/assets";
+import {
+  GlobeAltIcon,
+  DevicePhoneMobileIcon,
+  PaintBrushIcon,
+  CodeBracketSquareIcon,
+} from "@heroicons/react/24/outline";
 
 export default function Services() {
   const ServicesData = [
@@ -9,25 +13,25 @@ export default function Services() {
       title: "Web Application Development",
       description:
         "Custom, scalable web apps designed for performance, security, and business growth.",
-      icon: assets.web_app_icon,
+      icon: GlobeAltIcon,
     },
     {
       title: "Mobile App Development",
       description:
         "Cross-platform mobile apps that deliver seamless experiences across all devices.",
-      icon: assets.mobile_app_icon,
+      icon: DevicePhoneMobileIcon,
     },
     {
       title: "UI/UX Design",
       description:
         "Intuitive, user-centered design solutions that enhance user satisfaction and engagement.",
-      icon: assets.uiux_icon,
+      icon: PaintBrushIcon,
     },
     {
       title: "API Integration",
       description:
         "Robust API integration for smooth communication between your systems and third-party services.",
-      icon: assets.api_icon,
+      icon: CodeBracketSquareIcon,
     },
   ];
 
