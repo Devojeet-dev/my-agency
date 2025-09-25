@@ -34,7 +34,7 @@ export default function App() {
       </Routes>
 
       {/* Footer stays on all pages */}
-      <Footer />
+      <Footer theme={theme} setTheme={setTheme} />
     </Router>
   );
 }

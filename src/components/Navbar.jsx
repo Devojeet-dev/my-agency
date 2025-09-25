@@ -27,11 +27,7 @@ export default function Navbar({ theme, setTheme }) {
             <div className="flex justify-between items-center h-16">
               {/* Logo */}
               <div className="flex items-center">
-                <img
-                  src={theme === "dark" ? assets.logo_dark : assets.logo}
-                  alt="logo"
-                  className="w-28 sm:w-36"
-                />
+                <img src={theme === "dark" ? assets.logo_dark : assets.logo} alt="Logo" className="w-24 sm:w-32" />
               </div>
 
               {/* Desktop Nav */}
