@@ -68,7 +68,11 @@ my-agency/
 ├── postcss.config.js
 └── README.md
 
+---
+
 ####click to Check out the deployed version.
 
-- [agency.ai](https://my-agency-6zhl.vercel.app/) 
+- [agency.ai](https://my-agency-6zhl.vercel.app/)
+
+  ---
 
