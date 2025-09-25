@@ -1,12 +1,69 @@
-# React + Vite
+# My Agency
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A sleek, responsive agency website built with **React**, **Tailwind CSS**, and **React Router**.  
+It features dark mode, smooth navigation, and modern design for showcasing services and work.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🧰 Features
 
-## Expanding the ESLint configuration
+- Fully responsive layout (mobile, tablet, desktop)
+- Dark / Light theme toggle
+- Multi-page navigation using React Router
+- Sections: Home, Services, Our Work, Contact
+- Smooth transitions & hover effects
+- Mobile menu with toggle (hamburger → close icon)
+- Clean styling with Tailwind CSS
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🔧 Tech Stack
+
+- **Frontend**: React  
+- **Styling**: Tailwind CSS  
+- **Routing**: React Router DOM  
+- **UI Components / Utilities**: Headless UI, Heroicons  
+- **Build Tool / Bundler**: Vite  
+- **Version Control**: Git / GitHub  
+
+---
+
+## 💻 Getting Started
+
+### Prerequisites
+
+Make sure you have:
+
+- [Node.js](https://nodejs.org/) (v14+/v16+/latest LTS)  
+- npm or yarn  
+
+### Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/devojeet-dev/my-agency.git
+cd my-agency
+
+```
+2. install the dependencies:
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Start the development server::
+```bash
+npm run dev
+```
+
+
+---
+
+### Live Demo
+
+Check out the deployed version:  
+[agency.ai](https://my-agency-6zhl.vercel.app/)
+
+
