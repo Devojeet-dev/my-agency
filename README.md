@@ -45,11 +45,16 @@ Make sure you have:
 git clone https://github.com/devojeet-dev/my-agency.git
 cd my-agency
 
+```
+2. install the dependencies:
+```bash
 npm install
 # or
 yarn install
+```
 
-#folder structure
+###folder structure
+
 my-agency/
 ├── public/             # Static assets and index.html
 ├── src/
@@ -63,4 +68,7 @@ my-agency/
 ├── postcss.config.js
 └── README.md
 
+####click to Check out the deployed version.
+
+- [agency.ai](https://my-agency-6zhl.vercel.app/) 
 
