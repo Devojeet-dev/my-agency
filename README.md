@@ -53,26 +53,13 @@ npm install
 yarn install
 ```
 
-###folder structure
 
-my-agency/
-├── public/             # Static assets and index.html
-├── src/
-│   ├── assets/         # Images, icons, logos
-│   ├── components/     # Navbar, Footer, ThemeToggle, etc.
-│   ├── pages/          # Home, Services, Our Work, Contact, NotFound
-│   ├── App.jsx         # Main App component
-│   ├── main.jsx        # Entry point (Vite)
-├── package.json
-├── tailwind.config.js
-├── postcss.config.js
-└── README.md
 
 ---
 
-####click to Check out the deployed version.
+### Live Demo
 
-- [agency.ai](https://my-agency-6zhl.vercel.app/)
+Check out the deployed version:  
+[agency.ai](https://my-agency-6zhl.vercel.app/)
 
-  ---
 
