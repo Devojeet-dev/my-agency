@@ -2,9 +2,14 @@ import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import assets from "../assets/assets";
 import ThemeToggle from "./ThemeToggle";
+import { Link } from "react-router-dom";
 
 export default function Navbar({ theme, setTheme }) {
-  const navItems = ["Home", "Services", "Our work"];
+  const navItems = [
+    { name: "Home", path: "/" },
+    { name: "Services", path: "/services" },
+    { name: "Our Work", path: "/ourwork" },
+  ];
 
   return (
     <Disclosure
@@ -20,7 +25,6 @@ export default function Navbar({ theme, setTheme }) {
         <>
           <div className="container mx-auto px-4">
             <div className="flex justify-between items-center h-16">
-
               {/* Logo */}
               <div className="flex items-center">
                 <img
@@ -33,14 +37,14 @@ export default function Navbar({ theme, setTheme }) {
               {/* Desktop Nav */}
               <div className="hidden md:flex items-center gap-8 text-sm text-gray-700 dark:text-white">
                 {navItems.map((item, idx) => (
-                  <a
+                  <Link
                     key={idx}
-                    href={`#${item}`}
+                    to={item.path}
                     className="relative group transition-colors duration-200"
                   >
-                    {item}
+                    {item.name}
                     <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-gray-800 dark:bg-gray-200 transition-all duration-300 group-hover:w-full"></span>
-                  </a>
+                  </Link>
                 ))}
               </div>
 
