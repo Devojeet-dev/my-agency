@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Services from "./pages/Services";
 import OurWork from "./pages/OurWork";
 import ContactForm from "./pages/ContactForm";
+import Footer from "./components/Footer";
 
 
 export default function App() {
@@ -25,6 +26,7 @@ export default function App() {
       <Services />
       <OurWork />
       <ContactForm />
+      <Footer theme={theme} setTheme={setTheme} />
     </>
   );
 }

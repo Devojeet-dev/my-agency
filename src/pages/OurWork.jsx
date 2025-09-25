@@ -26,7 +26,7 @@ function OurWork() {
   return (
     <>
       {/* Section Heading */}
-      <div className='bg-gradient-to-b from-white to-blue-50 dark:from-gray-900 dark:to-gray-800 '>
+      <div id='ourWork' className='bg-gradient-to-b px-6 py-16 from-white to-blue-50 dark:from-gray-900 dark:to-gray-800 '>
         <Heading 
         heading="Our Latest Work" 
         para="From strategy to execution, we craft digital solutions that move your business forward." 

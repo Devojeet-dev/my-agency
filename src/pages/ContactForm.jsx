@@ -22,7 +22,10 @@ export default function ContactForm() {
     setStatus("Sending...");
 
     try {
-      const res = await axios.post("https://my-agency-backend.onrender.com/api/mail/send", formData); //http://localhost:3000
+      const res = await axios.post(
+        "https://my-agency-backend.onrender.com/api/mail/send",
+        formData
+      ); //http://localhost:3000
       if (res.data.success) {
         setStatus("✅ Your message has been sent successfully!");
         setFormData({ name: "", email: "", query: "" });
@@ -39,9 +42,8 @@ export default function ContactForm() {
     <section
       id="contact"
       className="relative text-center px-6 py-16 bg-gradient-to-b 
-                 from-white to-blue-50 dark:from-gray-900 dark:to-gray-800 overflow-hidden"
+                 to-white from-blue-50 dark:to-gray-900 dark:from-gray-800 overflow-hidden"
     >
-
       {/* Heading */}
       <h2 className="text-3xl sm:text-5xl font-extrabold text-gray-900 dark:text-white leading-tight relative z-10">
         Let’s <span className="text-indigo-500">connect</span> with you
@@ -54,9 +56,11 @@ export default function ContactForm() {
       </p>
 
       {/* Form Card */}
-      <div className="mt-10 w-full max-w-lg mx-auto bg-white/80 dark:bg-gray-800/80 
+      <div
+        className="mt-10 w-full max-w-lg mx-auto bg-white/80 dark:bg-gray-800/80 
                       backdrop-blur-lg rounded-2xl shadow-xl p-8 relative z-10 
-                      border border-gray-200 dark:border-gray-700">
+                      border border-gray-200 dark:border-gray-700"
+      >
         <form onSubmit={handleSubmit} className="space-y-5">
           <div className="text-left">
             <label className="block text-gray-700 dark:text-gray-300 mb-1">

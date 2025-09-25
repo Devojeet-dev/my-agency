@@ -1,5 +1,3 @@
-import React from 'react';
-
 function ServicesCard({ title, description, icon }) {
   return (
     <div className="flex items-start  px-10 py-8 bg-white dark:bg-gray-800 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 dark:border-gray-700">
